@@ -1,0 +1,2 @@
+# typewriter
+Opinionated NeoVim configuration
