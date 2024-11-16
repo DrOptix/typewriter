@@ -6,8 +6,8 @@ Opinionated NeoVim configuration
 
 Those are the dependencies not handled automatically.
 
-- (neovim)[https://github.com/neovim/neovim]
-- (ripgrep)[https://github.com/BurntSushi/ripgrep]
+- [neovim](https://github.com/neovim/neovim)
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
 
 ## Install
 
