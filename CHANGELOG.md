@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `<LEADER>tx` - Close current tab
 - `<LEADER>tn` - Go to next tab
 - `<LEADER>tp` - Go to previous tab
+- `<LEADER>nh` - Clear search highlights
 
 ### Tests
 
