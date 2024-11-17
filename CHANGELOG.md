@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Tests
 
 - Install `git` in test containers
+- Add test container for Ubuntu 24.04
 
 ## [v0.2.1] - 2024-11-17
 
