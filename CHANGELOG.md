@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [unreleased]
+
+### Added
+
+- Better status line, using `lualine`.
+- Show edit mode in status line
+- Show git branch in status line
+- Show file name in status line
+- Show lazy plugins update count
+- Show encoding in status line
+- Show file type in status line
+- Show file scroll amount in percentages
+- Show current line and column
+- Use Nord theme for the status line
+
 ## [v0.3.0] - 2024-11-17
 
 ### Added
