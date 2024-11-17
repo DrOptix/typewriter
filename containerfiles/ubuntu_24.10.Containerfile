@@ -4,10 +4,13 @@ FROM docker.io/library/ubuntu:24.10
 RUN apt-get update \
     && apt-get --yes upgrade \
     && apt-get --yes --no-install-recommends install \
-        ca-certificates \
         neovim \
         ripgrep \
+        ca-certificates \
         git \
+        make \
+        gcc \
+        libc6-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
