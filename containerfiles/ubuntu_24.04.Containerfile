@@ -4,6 +4,7 @@ FROM docker.io/library/ubuntu:24.04
 RUN apt-get update \
     && apt-get --yes upgrade \
     && apt-get --yes --no-install-recommends install \
+        ca-certificates \
         neovim \
         ripgrep \
         git \
