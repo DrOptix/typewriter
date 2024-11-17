@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v0.2.1] - 2024-11-17
+
 ### Fixed
 
 - Link to versions diff in CHANGELOG
@@ -61,6 +63,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Horizontal splits will go bellow the current split
 - Add `-` as a keyword charater.
 
-[unreleased]: https://github.com/DrOptix/typewriter/compare/v0.2.0...HEAD
+[unreleased]: https://github.com/DrOptix/typewriter/compare/v0.2.1...HEAD
+[v0.2.1]: https://github.com/DrOptix/typewriter/compare/v0.2.0...v0.2.1
 [v0.2.0]: https://github.com/DrOptix/typewriter/compare/v0.1.0...v0.2.0
 [v0.1.0]: https://github.com/DrOptix/typewriter/releases/tag/v0.1.0
