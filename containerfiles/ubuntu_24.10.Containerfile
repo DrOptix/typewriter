@@ -6,6 +6,7 @@ RUN apt-get update \
     && apt-get --yes --no-install-recommends install \
         neovim \
         ripgrep \
+        git \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 

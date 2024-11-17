@@ -17,6 +17,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `<LEADER>fk` - Fuzzy find keybindings
 - In `telescope`, `Ctrl+J` - Go to next selection
 - In `telescope`, `Ctrl+K` - Go to previous selection
+- Add mention about `git` dependency in README.md
+
+### Tests
+
+- Install `git` in test containers
 
 ## [v0.2.1] - 2024-11-17
 

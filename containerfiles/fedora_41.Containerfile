@@ -4,6 +4,7 @@ FROM registry.fedoraproject.org/fedora:41
 RUN dnf -y install \
         neovim \
         ripgrep \
+        git \
     && dnf clean all \
     && rm -rf /var/cache/dnf
 
