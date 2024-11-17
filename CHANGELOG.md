@@ -10,13 +10,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Add `Lazy.nvim` plugin manager
-- `<LEADER>ff` - Find files in current working directory
-- `<LEADER>fs` - Find string in current working directory
-- `<LEADER>fc` - Find string under cursor in current working directory
-- `<LEADER>fb` - Fuzzy find open buffers
-- `<LEADER>fk` - Fuzzy find keybindings
-- In `telescope`, `Ctrl+J` - Go to next selection
-- In `telescope`, `Ctrl+K` - Go to previous selection
+- `<LEADER>ff` - Find files in current working directory using `telescope`
+- `<LEADER>fs` - Find string in current working directory using `telescope`
+- `<LEADER>fc` - Find string under cursor in current working directory using `telescope`
+- `<LEADER>fb` - Fuzzy find open buffers using `telescope`
+- `<LEADER>fk` - Fuzzy find keybindings using `telescope`
+- In `telescope` window, `Ctrl+J` - Go to next selection
+- In `telescope` window, `Ctrl+K` - Go to previous selection
 - Add mention `telescope-fzf-native` build dependency in README.md
 
 ### Tests
