@@ -10,14 +10,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Set leader to ` `. It is the space key.
+
 - `<LEADER>sv` - Split window veritcally
 - `<LEADER>sh` - Split window horizontally
 - `<LEADER>se` - Make splits to be of equal size
 - `<LEADER>sx` - Close current split
+
 - `<LEADER>to` - Open new tab
 - `<LEADER>tx` - Close current tab
 - `<LEADER>tn` - Go to next tab
 - `<LEADER>tp` - Go to previous tab
+
+- `Shift+H` - Decrease split horizontal size
+- `Shift+L` - Increase split horizontal size
+- `Shift+J` - Increase split vertical size
+- `Shift+K` - Decrease split vertical size
+
 - `<LEADER>nh` - Clear search highlights
 
 ### Tests
