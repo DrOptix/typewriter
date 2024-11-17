@@ -19,6 +19,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Show file scroll amount in percentages
 - Show current line and column
 - Use Nord theme for the status line
+- Mark idents using `┊` symbol
 
 ## [v0.3.0] - 2024-11-17
 
