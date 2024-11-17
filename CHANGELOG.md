@@ -14,6 +14,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `<LEADER>sh` - Split window horizontally
 - `<LEADER>se` - Make splits to be of equal size
 - `<LEADER>sx` - Close current split
+- `<LEADER>to` - Open new tab
+- `<LEADER>tx` - Close current tab
+- `<LEADER>tn` - Go to next tab
+- `<LEADER>tp` - Go to previous tab
 
 ## [0.1.0] - 2024-11-07
 
