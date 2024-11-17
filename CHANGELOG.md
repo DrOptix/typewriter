@@ -7,6 +7,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add `Lazy.nvim` plugin manager
+- `<LEADER>ff` - Find files in current working directory
+- `<LEADER>fs` - Find string in current working directory
+- `<LEADER>fc` - Find string under cursor in current working directory
+- `<LEADER>fb` - Fuzzy find open buffers
+- `<LEADER>fk` - Fuzzy find keybindings
+- In `telescope`, `Ctrl+J` - Go to next selection
+- In `telescope`, `Ctrl+K` - Go to previous selection
+- Add mention `telescope-fzf-native` build dependency in README.md
+
+### Tests
+
+- Install `git` in test containers
+- Install `ca-cerfificates` in Ubuntu test containers
+- Install `make` in Ubuntu test containers
+- Install `gcc` in Ubuntu test containers
+- Install `libc6-dev` in Ubuntu test containers
+- Add test container for Ubuntu 24.04
+
 ## [v0.2.1] - 2024-11-17
 
 ### Fixed

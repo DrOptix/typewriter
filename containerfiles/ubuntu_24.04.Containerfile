@@ -1,4 +1,4 @@
-FROM docker.io/library/ubuntu:24.10
+FROM docker.io/library/ubuntu:24.04
 
 # Upgrade the system and install sudo and ansible
 RUN apt-get update \
