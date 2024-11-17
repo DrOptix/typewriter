@@ -33,7 +33,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add test container for Fedora 41
 - Add test container for Ubuntu 24.10
 
-## [0.1.0] - 2024-11-07
+## [0.1.0] - 2024-11-17
 
 ### Added
 
