@@ -11,6 +11,9 @@ Those are the dependencies not handled automatically.
 - [git](https://git-scm.com/)
 - [make](https://www.gnu.org/software/make/)
 - [gcc](http://gcc.gnu.org)
+- [glibc](https://www.gnu.org/software/libc/)
+  - Fedora: `glibc-devel`
+  - Ubuntu: `libc6-devel`
 
 ## Install
 
