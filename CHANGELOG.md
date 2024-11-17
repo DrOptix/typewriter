@@ -19,6 +19,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `<LEADER>tn` - Go to next tab
 - `<LEADER>tp` - Go to previous tab
 
+### Tests
+
+- Add test container for Fedora 41
+- Add test container for Ubuntu 24.10
+
 ## [0.1.0] - 2024-11-07
 
 ### Added
