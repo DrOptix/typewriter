@@ -23,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add TODO highlighting using `todo-comments` plugin
 - `]t` Jump to next TODO
 - `[t` Jump to previous TODO
+- Friendly welcome screen when opening `neovim`
 
 ## [v0.3.0] - 2024-11-17
 
