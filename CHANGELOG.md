@@ -24,6 +24,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `]t` Jump to next TODO
 - `[t` Jump to previous TODO
 - Friendly welcome screen when opening `neovim`
+- Syntax highlighting for C#, Markdown, JSON, YAML, Dockerfiles, gitignore,
+  Bash and Fish
 
 ## [v0.3.0] - 2024-11-17
 
