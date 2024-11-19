@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+### Added
+
+- Completion for word present in current buffers using `nvim-cmp`
+- `C-k`: Select previous completion option
+- `C-j`: Select next completion option
+- `C-b`: Scroll up 4 lines in documentatio preview
+- `C-f`: Scroll down 4 lines in documentatio preview
+- `C-Space`: Accept current selection
+- `C-e`: Close completion menu
+- `CR`: Accept current competion option
+
 ## [v0.4.0]
 
 ### Added
