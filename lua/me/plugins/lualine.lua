@@ -2,7 +2,7 @@ return {
     "nvim-lualine/lualine.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     config = function()
-        local theme = require("lualine.themes.nord")
+        local theme = require("lualine.themes.gruvbox")
         local lazy_status = require("lazy.status")
         require("lualine").setup({
             options = {
