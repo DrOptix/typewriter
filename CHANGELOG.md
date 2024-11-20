@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Completion for commands, `:`, using `nvim-cmp` and `cmp-cmdline` and
+  `cmp-path` as sources.
+
 - Add completion for word present in current buffers using `nvim-cmp` and
   `cmp-buffer` plugins
 
