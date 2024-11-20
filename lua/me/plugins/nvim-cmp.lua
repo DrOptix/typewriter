@@ -52,5 +52,12 @@ return {
 				{ name = "path" },
 			},
 		})
+
+		-- Setup cmdline completion for `/` (search)
+		cmp.setup.cmdline("/", {
+			sources = {
+				{ name = "buffer" },
+			},
+		})
 	end,
 }
