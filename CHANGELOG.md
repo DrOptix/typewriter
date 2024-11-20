@@ -21,6 +21,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Ignore the content of `.git` directory
 
+### Fixed
+
+- Include hidden files when using `telescope` find files (`<LEADER>ff`)
+
+### Removed
+
+- Remove `smart` path display in `telescope` as it is confusing
+
 ## [v0.4.0]
 
 ### Added
