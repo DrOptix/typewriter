@@ -9,7 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- While in `telescope` popup
+
+  - In `normal` mode, close the popup with `q`
+  - In `insert` mode, close the popup with `Ctrl+Q`
+
 - While in `telescope` buffers popup
+
   - In `normal` mode, delete buffer using `d`
   - In `insert` mode, delete buffer using `Ctrl+D`
 

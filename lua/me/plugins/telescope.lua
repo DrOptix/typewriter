@@ -26,7 +26,14 @@ return {
 
                         -- Move to next result
                         ["<C-j>"] = actions.move_selection_next,
+
+                        -- Close telescope window
+                        ["<C-q>"] = actions.close,
                     },
+                    n = {
+                        -- Close telescope window
+                        ["q"] = actions.close,
+                    }
                 },
             },
             pickers = {
