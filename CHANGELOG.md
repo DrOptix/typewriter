@@ -9,19 +9,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add completion for word present in current buffers using `nvim-cmp` and
+`cmp-buffer` plugins
+
+- Add completion for file paths using `nvim-cmp` and `cmp-path` plugins. While
+open the completion popup shows a preview of the file.
+
 - Completion for commands, `:`, using `nvim-cmp` and `cmp-cmdline` and
   `cmp-path` as sources.
 
 - Completion for search, `/`, using `nvim-cmp` and `cmp-cmdline` and
   `cmd-buffer` as sources.
-
-### Added
-
-- Add completion for word present in current buffers using `nvim-cmp` and
-  `cmp-buffer` plugins
-
-- Add completion for file paths using `nvim-cmp` and `cmp-path` plugins. While
-  open the completion popup shows a preview of the file.
 
 - `C-k`: Select previous completion option
 - `C-j`: Select next completion option
