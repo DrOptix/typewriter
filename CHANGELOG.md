@@ -29,7 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Remove `smart` path display in `telescope` as it is confusing
 
-## [v0.4.0]
+## [v0.4.0] - 2024-11-18
 
 ### Added
 
