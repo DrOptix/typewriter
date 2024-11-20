@@ -18,6 +18,7 @@ return {
         telescope.setup({
             defaults = {
                 path_display = { "smart" },
+                file_ignore_patterns = { "%.git/.*" },
                 mappings = {
                     i = {
                         -- Move to previous result

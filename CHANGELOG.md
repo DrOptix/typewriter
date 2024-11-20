@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - In `normal` mode, delete buffer using `d`
   - In `insert` mode, delete buffer using `Ctrl+D`
 
+- Ignore the content of `.git` directory
+
 ## [v0.4.0]
 
 ### Added
