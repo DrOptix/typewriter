@@ -28,6 +28,21 @@ return {
                     },
                 },
             },
+            pickers = {
+                find_files = {
+                    hidden = true,
+                },
+                buffers = {
+                    mappings = {
+                        i = {
+                            ["<C-d>"] = actions.delete_buffer,
+                        },
+                        n = {
+                            ["d"] = actions.delete_buffer,
+                        },
+                    },
+                },
+            },
         })
 
         telescope.load_extension("fzf")
