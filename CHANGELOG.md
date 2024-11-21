@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Add `treesitter` parser for `lua`
+- Add `gruvbox` theme for `neovim`
+
 - While in `telescope` popup
 
   - In `normal` mode, close the popup with `q`
@@ -22,10 +25,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Ignore the content of `.git` directory in `telescope`
 
 - Add completion for word present in current buffers using `nvim-cmp` and
-`cmp-buffer` plugins
+  `cmp-buffer` plugins
 
 - Add completion for file paths using `nvim-cmp` and `cmp-path` plugins. While
-open the completion popup shows a preview of the file.
+  open the completion popup shows a preview of the file.
 
 - Completion for commands, `:`, using `nvim-cmp` and `cmp-cmdline` and
   `cmp-path` as sources.
@@ -40,6 +43,10 @@ open the completion popup shows a preview of the file.
 - `C-Space`: Accept current selection
 - `C-e`: Close completion menu
 - `CR`: Accept current competion option
+
+### Changed
+
+- Set `gruvbox` theme for `lualine`
 
 ### Fixed
 

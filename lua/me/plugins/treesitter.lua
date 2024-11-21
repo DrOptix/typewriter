@@ -20,6 +20,7 @@ return {
 			ensure_installed = {
 				-- Programming languages
 				"c_sharp",
+                "lua",
 
 				-- Markup and styling
 				"markdown",
