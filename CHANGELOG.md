@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased]
 
+## [v0.5.0] - 2024-11-21
+
 ### Added
 
 - Add `treesitter` parser for `lua`
@@ -157,7 +159,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Horizontal splits will go bellow the current split
 - Add `-` as a keyword charater.
 
-[unreleased]: https://github.com/DrOptix/typewriter/compare/v0.4.0...HEAD
+[unreleased]: https://github.com/DrOptix/typewriter/compare/v0.5.0...HEAD
+[v0.5.0]: https://github.com/DrOptix/typewriter/compare/v0.4.0...v0.5.0
 [v0.4.0]: https://github.com/DrOptix/typewriter/compare/v0.3.0...v0.4.0
 [v0.3.0]: https://github.com/DrOptix/typewriter/compare/v0.2.1...v0.3.0
 [v0.2.1]: https://github.com/DrOptix/typewriter/compare/v0.2.0...v0.2.1
