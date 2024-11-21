@@ -19,7 +19,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - In `normal` mode, delete buffer using `d`
   - In `insert` mode, delete buffer using `Ctrl+D`
 
-- Ignore the content of `.git` directory
+- Ignore the content of `.git` directory in `telescope`
+
+- Add completion for word present in current buffers using `nvim-cmp` and
+`cmp-buffer` plugins
+
+- Add completion for file paths using `nvim-cmp` and `cmp-path` plugins. While
+open the completion popup shows a preview of the file.
+
+- Completion for commands, `:`, using `nvim-cmp` and `cmp-cmdline` and
+  `cmp-path` as sources.
+
+- Completion for search, `/`, using `nvim-cmp` and `cmp-cmdline` and
+  `cmd-buffer` as sources.
+
+- `C-k`: Select previous completion option
+- `C-j`: Select next completion option
+- `C-b`: Scroll up 4 lines in documentatio preview
+- `C-f`: Scroll down 4 lines in documentatio preview
+- `C-Space`: Accept current selection
+- `C-e`: Close completion menu
+- `CR`: Accept current competion option
 
 ### Fixed
 
