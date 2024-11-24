@@ -13,6 +13,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Move `keymaps`, `options`, `lazy` modules in `config. No functionality is affected.
 - Move ` alpha`, `lualine` and `telescope` to `base` plugin layer. No functionality is affected.
 
+- Move `ident_blank_line`, `todo-comments`, `treesitter` to `editor` plugin
+  layer. No functionality is affected.
+
 ## [v0.5.0] - 2024-11-21
 
 ### Added
