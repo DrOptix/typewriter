@@ -10,12 +10,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Refactor
 
 - Rename `me` lua module to `typewriter`. No functionality is affected.
-- Move `keymaps`, `options`, `lazy` modules in `config. No functionality is
-  affected.
-- Move ` alpha`, `lualine` and `telescope` to `base` plugin layer. No
-  functionality is affected.
+
+- Move `keymaps`, `options`, `lazy` modules in `config`.
+  No functionality is affected.
+
+- Move ` alpha`, `lualine` and `telescope` to `base` plugin layer.
+  No functionality is affected.
+
 - Move `ident_blank_line`, `todo-comments`, `treesitter` to `editor` plugin
-  layer. No functionality is affected.
+  layer.
+  No functionality is affected.
+
+- Configure `base` plugins using `opts` instead of `config` as much as possible.
 
 ## [v0.5.0] - 2024-11-21
 
