@@ -22,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   No functionality is affected.
 
 - Configure `base` plugins using `opts` instead of `config` as much as possible.
+- Configure `editor` plugins using `opts` instead of `config` as much as possible.
 
 ## [v0.5.0] - 2024-11-21
 
