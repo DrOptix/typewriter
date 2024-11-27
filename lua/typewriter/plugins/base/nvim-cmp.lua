@@ -6,9 +6,9 @@ return {
 		"hrsh7th/cmp-path", -- Source for file paths
 		"hrsh7th/cmp-cmdline", -- Source for command line completion
 	},
-	config = function()
+	opts = function()
 		local cmp = require("cmp")
-		cmp.setup({
+		return {
 			completion = {
 				completeopt = "menu,menuone,preview,noselect",
 			},
@@ -43,7 +43,10 @@ return {
 				-- File paths
 				{ name = "path", option = { trailing_slash = true, include_hidden = true } },
 			}),
-		})
+		}
+	end,
+	config = function()
+		local cmp = require("cmp")
 
 		-- Setup cmdline completion for `:` (command)
 		cmp.setup.cmdline(":", {

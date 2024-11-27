@@ -14,8 +14,10 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local imports = {
-    { import = "me.plugins" },
-    { import = "me.plugins.themes" },
+    { import = "typewriter.plugins.base" },
+    { import = "typewriter.plugins.editor" },
+    { import = "typewriter.plugins" },
+    { import = "typewriter.plugins.themes" },
 }
 
 require("lazy").setup(imports, {
