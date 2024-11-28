@@ -11,9 +11,11 @@ return {
 		-- Filetype icons for Neovim plugins and status lines.
 		{ "nvim-tree/nvim-web-devicons" },
 	},
-	opts = function()
-        local actions = require("telescope.actions")
-		local opts = {
+	config = function()
+		local telescope = require("telescope")
+		local actions = require("telescope.actions")
+
+		telescope.setup({
 			defaults = {
 				file_ignore_patterns = { "%.git/.*" },
 				mappings = {
@@ -48,14 +50,22 @@ return {
 					},
 				},
 			},
-		}
-		return opts
+		})
+
+		telescope.load_extension("fzf")
+
+		-----------------
+		-- KEYBINDINGS --
+		-----------------
+		vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in CWD" })
+		vim.keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in CWD" })
+		vim.keymap.set(
+			"n",
+			"<leader>fc",
+			"<cmd>Telescope grep_string<cr>",
+			{ desc = "Find string under cursor in CWD" }
+		)
+		vim.keymap.set("n", "<leader>fb", "<CMD>Telescope buffers<cr>", { desc = "Fuzzy find open buffers" })
+		vim.keymap.set("n", "<leader>fk", "<CMD>Telescope keymaps<cr>", { desc = "Fuzzy find keybindings" })
 	end,
-	keys = {
-		{ "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Fuzzy find files in CWD" },
-		{ "<leader>fs", "<cmd>Telescope live_grep<cr>", desc = "Find string in CWD" },
-		{ "<leader>fc", "<cmd>Telescope grep_string<cr>", desc = "Find string under cursor in CWD" },
-		{ "<leader>fb", "<CMD>Telescope buffers<cr>", desc = "Fuzzy find open buffers" },
-		{ "<leader>fk", "<CMD>Telescope keymaps<cr>", desc = "Fuzzy find keybindings" },
-	},
 }
