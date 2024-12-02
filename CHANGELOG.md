@@ -76,6 +76,7 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 - `]t` Jump to next TODO
 - `[t` Jump to previous TODO
 - Friendly welcome screen when opening `neovim`
+
 - Syntax highlighting for C#, Markdown, JSON, YAML, Dockerfiles, gitignore,
   Bash and Fish
 
@@ -86,7 +87,10 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 - Add `Lazy.nvim` plugin manager
 - `<LEADER>ff` - Find files in current working directory using `telescope`
 - `<LEADER>fs` - Find string in current working directory using `telescope`
-- `<LEADER>fc` - Find string under cursor in current working directory using `telescope`
+
+- `<LEADER>fc` - Find string under cursor in current working directory using
+  `telescope`
+
 - `<LEADER>fb` - Fuzzy find open buffers using `telescope`
 - `<LEADER>fk` - Fuzzy find keybindings using `telescope`
 - In `telescope` window, `Ctrl+J` - Go to next selection
@@ -159,14 +163,11 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 - Add `-` as a keyword charater.
 
 [unreleased]: https://github.com/DrOptix/typewriter/compare/v0.5.0...HEAD
-
 [v0.5.0]: https://github.com/DrOptix/typewriter/compare/v0.4.0...v0.5.0
 [v0.4.0]: https://github.com/DrOptix/typewriter/compare/v0.3.0...v0.4.0
 [v0.3.0]: https://github.com/DrOptix/typewriter/compare/v0.2.1...v0.3.0
 [v0.2.1]: https://github.com/DrOptix/typewriter/compare/v0.2.0...v0.2.1
 [v0.2.0]: https://github.com/DrOptix/typewriter/compare/v0.1.0...v0.2.0
 [v0.1.0]: https://github.com/DrOptix/typewriter/releases/tag/v0.1.0
-
 [Keep a Changelog]: https://keepachangelog.com/en/1.1.0/
 [SemVer]: https://semver.org/spec/v2.0.0.html
-
