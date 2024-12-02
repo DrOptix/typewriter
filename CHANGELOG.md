@@ -2,8 +2,7 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 
 ## [unreleased]
 
@@ -77,6 +76,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `]t` Jump to next TODO
 - `[t` Jump to previous TODO
 - Friendly welcome screen when opening `neovim`
+
 - Syntax highlighting for C#, Markdown, JSON, YAML, Dockerfiles, gitignore,
   Bash and Fish
 
@@ -87,7 +87,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Add `Lazy.nvim` plugin manager
 - `<LEADER>ff` - Find files in current working directory using `telescope`
 - `<LEADER>fs` - Find string in current working directory using `telescope`
-- `<LEADER>fc` - Find string under cursor in current working directory using `telescope`
+
+- `<LEADER>fc` - Find string under cursor in current working directory using
+  `telescope`
+
 - `<LEADER>fb` - Fuzzy find open buffers using `telescope`
 - `<LEADER>fk` - Fuzzy find keybindings using `telescope`
 - In `telescope` window, `Ctrl+J` - Go to next selection
@@ -107,7 +110,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Link to versions diff in CHANGELOG
+- Links to versions diff in CHANGELOG
 
 ## [v0.2.0] - 2024-11-17
 
@@ -166,3 +169,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 [v0.2.1]: https://github.com/DrOptix/typewriter/compare/v0.2.0...v0.2.1
 [v0.2.0]: https://github.com/DrOptix/typewriter/compare/v0.1.0...v0.2.0
 [v0.1.0]: https://github.com/DrOptix/typewriter/releases/tag/v0.1.0
+[Keep a Changelog]: https://keepachangelog.com/en/1.1.0/
+[SemVer]: https://semver.org/spec/v2.0.0.html
