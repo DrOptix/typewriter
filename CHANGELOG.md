@@ -107,7 +107,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
-- Link to versions diff in CHANGELOG
+- Links to versions diff in CHANGELOG
 
 ## [v0.2.0] - 2024-11-17
 
