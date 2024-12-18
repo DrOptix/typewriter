@@ -15,6 +15,7 @@ Those are the dependencies not handled automatically.
   - Fedora: `glibc-devel`
   - Ubuntu: `libc6-devel`
 - [dotnet](https://github.com/dotnet/), for `C#` support
+- [unzip](http://infozip.sourceforge.net)
 
 ## Install
 
