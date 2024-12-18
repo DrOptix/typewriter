@@ -11,6 +11,7 @@ RUN apt-get update \
         make \
         gcc \
         libc6-dev \
+        unzip \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 

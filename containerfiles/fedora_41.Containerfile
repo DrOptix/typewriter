@@ -5,6 +5,7 @@ RUN dnf -y install \
         neovim \
         ripgrep \
         git \
+        unzip \
     && dnf clean all \
     && rm -rf /var/cache/dnf
 
