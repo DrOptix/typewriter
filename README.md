@@ -14,6 +14,7 @@ Those are the dependencies not handled automatically.
 - [glibc](https://www.gnu.org/software/libc/)
   - Fedora: `glibc-devel`
   - Ubuntu: `libc6-devel`
+- [dotnet](https://github.com/dotnet/), for `C#` support
 
 ## Install
 
