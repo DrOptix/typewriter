@@ -6,19 +6,21 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 
 ## [unreleased]
 
+## [v0.6.0] - 2024-12-20
+
+### Added
+
 - Add LSP support for C#
 
-- LSP keybindings:
+- In `normal` mode, `gr`: Lists LSP references for word under the cursor
 
-  - In `normal` mode, `gr`: Lists LSP references for word under the cursor
+- In `normal` mode, `gd`: Goto the definition of the word under the cursor, if
+  there's only one, otherwise show all options in `telescope`
 
-  - In `normal` mode, `gd`: Goto the definition of the word under the cursor,
-    if there's only one, otherwise show all options in `telescope`
+- In `normal` mode, `gi`: Goto the implementation of the word under the cursor
+  if there's only one, otherwise show all options in `telescope`"
 
-  - In `normal` mode, `gi`: Goto the implementation of the word under the cursor
-    if there's only one, otherwise show all options in `telescope`"
-
-  - In `normal` mode, `<LEADER>rs`, Restart LSP
+- In `normal` mode, `<LEADER>rs`, Restart LSP
 
 ## [v0.5.0] - 2024-11-21
 
@@ -176,7 +178,8 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 - Horizontal splits will go bellow the current split
 - Add `-` as a keyword charater.
 
-[unreleased]: https://github.com/DrOptix/typewriter/compare/v0.5.0...HEAD
+[unreleased]: https://github.com/DrOptix/typewriter/compare/v0.6.0...HEAD
+[v0.6.0]: https://github.com/DrOptix/typewriter/compare/v0.5.0...v0.6.0
 [v0.5.0]: https://github.com/DrOptix/typewriter/compare/v0.4.0...v0.5.0
 [v0.4.0]: https://github.com/DrOptix/typewriter/compare/v0.3.0...v0.4.0
 [v0.3.0]: https://github.com/DrOptix/typewriter/compare/v0.2.1...v0.3.0
