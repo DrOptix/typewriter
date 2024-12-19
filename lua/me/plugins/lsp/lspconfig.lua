@@ -65,6 +65,27 @@ return {
 					enable_import_completion = true,
 				})
 			end,
+
+			["lua_ls"] = function()
+				lspconfig["lua_ls"].setup({
+					capabilities = capabilities,
+					settings = {
+						Lua = {
+							-- Make the language server recognize "vim" global
+							diagnostics = {
+								globals = { "vim" },
+							},
+							workspace = {
+								-- Make language server aware of runtime files
+								library = {
+									[vim.fn.expand("$VIMRUNTIME/lua")] = true,
+									[vim.fn.stdpath("config") .. "/lua"] = true,
+								},
+							},
+						},
+					},
+				})
+			end,
 		})
 	end,
 }

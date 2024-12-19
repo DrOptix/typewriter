@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 
 ## [unreleased]
 
+### Added
+
+- LSP support for Lua
+
 ## [v0.6.0] - 2024-12-20
 
 ### Added
