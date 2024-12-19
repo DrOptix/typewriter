@@ -6,6 +6,8 @@ RUN dnf -y install \
         ripgrep \
         git \
         unzip \
+        gcc \
+        dotnet-sdk-9.0 \
     && dnf clean all \
     && rm -rf /var/cache/dnf
 

@@ -12,6 +12,8 @@ RUN apt-get update \
         gcc \
         libc6-dev \
         unzip \
+        wget \
+        dotnet-sdk-9.0 \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
