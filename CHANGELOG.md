@@ -8,6 +8,18 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 
 - Add LSP support for C#
 
+- LSP keybindings:
+
+  - In `normal` mode, `gr`: Lists LSP references for word under the cursor
+
+  - In `normal` mode, `gd`: Goto the definition of the word under the cursor,
+    if there's only one, otherwise show all options in `telescope`
+
+  - In `normal` mode, `gi`: Goto the implementation of the word under the cursor
+    if there's only one, otherwise show all options in `telescope`"
+
+  - In `normal` mode, `<LEADER>rs`, Restart LSP
+
 ## [v0.5.0] - 2024-11-21
 
 ### Added
