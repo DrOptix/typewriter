@@ -29,9 +29,9 @@ return {
 					"Goto the definition of the word under the cursor, if there's only one, otherwise show all options in `telescope`"
 				vim.keymap.set("n", "gd", "<cmd>Telescope lsp_definitions<CR>", key_opts)
 
-				opts.desc =
+				key_opts.desc =
 					"Goto the implementation of the word under the cursor if there's only one, otherwise show all options in `telescope`"
-				vim.keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<CR>", opts)
+				vim.keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<CR>", key_opts)
 
 				key_opts.desc = "Restart LSP"
 				vim.keymap.set("n", "<leader>rs", ":LspRestart<CR>", key_opts)
