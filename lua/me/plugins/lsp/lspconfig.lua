@@ -65,6 +65,12 @@ return {
 					enable_import_completion = true,
 				})
 			end,
+
+			["rust_analyzer"] = function()
+				lspconfig["rust_analyzer"].setup({
+					capabilities = capabilities,
+				})
+			end,
 		})
 	end,
 }

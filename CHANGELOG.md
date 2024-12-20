@@ -6,6 +6,10 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 
 ## [unreleased]
 
+### Added
+
+- Rust LSP, trough `rust_analyzer`
+
 ## [v0.6.0] - 2024-12-20
 
 ### Added
