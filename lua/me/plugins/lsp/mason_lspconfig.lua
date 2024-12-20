@@ -7,6 +7,7 @@ return {
 		ensure_installed = {
             "lua_ls",
 			"omnisharp",
+            "rust_analyzer",
 		},
 	},
 }

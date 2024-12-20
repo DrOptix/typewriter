@@ -8,7 +8,8 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 
 ### Added
 
-- LSP support for Lua
+- Lua LSP support, trough `lua_ls`
+- Rust LSP support, trough `rust_analyzer`
 
 ## [v0.6.0] - 2024-12-20
 
