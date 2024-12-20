@@ -20,5 +20,7 @@ RUN groupadd --gid 1000 test \
 USER test
 WORKDIR /home/test/
 
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+
 # Copy `typewriter` in the container
 COPY --chown=test:test . /home/test/.config/nvim/

@@ -14,6 +14,7 @@ RUN apt-get update \
         unzip \
         wget \
         dotnet-sdk-9.0 \
+        curl \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
@@ -25,6 +26,8 @@ RUN groupadd --gid 1001 test \
 # Swith to user
 USER test
 WORKDIR /home/test/
+
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
 # Copy `typewriter` in the container
 COPY --chown=test:test . /home/test/.config/nvim/
