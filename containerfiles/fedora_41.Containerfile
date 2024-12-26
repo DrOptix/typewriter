@@ -8,6 +8,7 @@ RUN dnf -y install \
         unzip \
         gcc \
         dotnet-sdk-9.0 \
+        procps-ng \
     && dnf clean all \
     && rm -rf /var/cache/dnf
 
