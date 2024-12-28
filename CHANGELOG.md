@@ -11,7 +11,10 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 - Lua LSP support, trough `lua_ls`
 - Rust LSP support, trough `rust_analyzer`
 
-- Setup DAP support
+- Setup DAP support for C#
+  - Attaching to a running process
+
+- Available DAP keybindings
   - `F5`: Start/Continue binary debugging
   - `F10`: Step over function
   - `F11`: Step into function
