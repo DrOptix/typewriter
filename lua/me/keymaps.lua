@@ -21,7 +21,7 @@ vim.keymap.set(
 	{ desc = "Increase split horizontal size", noremap = true, silent = true }
 )
 vim.keymap.set("n", "J", ":resize +2<CR>", { desc = "Decrease split horizontal size", noremap = true, silent = true })
-vim.keymap.set("n", "K", ":resize -1<CR>", { desc = "Increase split horizontal size", noremap = true, silent = true })
+vim.keymap.set("n", "K", ":resize -2<CR>", { desc = "Increase split horizontal size", noremap = true, silent = true })
 
 ---------------------
 -- Tabs management --

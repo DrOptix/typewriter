@@ -30,6 +30,11 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
   - In `normal` mode, `<LEADER>k`: Show documentation for the symbol under
     cursor.
 
+### Fixed
+
+- Increase split horizontal size used now `2` units instead of `1`, making it
+  consistent with the other split resize steps.
+
 ## [v0.6.0] - 2024-12-20
 
 ### Added
