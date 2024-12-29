@@ -40,6 +40,10 @@ return {
 				vim.keymap.set("n", "<LEADER>k", function()
 					vim.lsp.buf.hover()
 				end, key_opts)
+				key_opts.desc = "Format the current buffer"
+				vim.keymap.set("n", "<LEADER>f", function()
+                    vim.lsp.buf.formatting()
+				end, key_opts)
 			end,
 		})
 
