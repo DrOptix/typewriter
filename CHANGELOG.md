@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 - Rust LSP support, trough `rust_analyzer`
 
 - Setup DAP support for C#
+  - Launching a C# project (build and attach)
   - Attaching to a running process
 
 - Available DAP keybindings
