@@ -8,6 +8,7 @@ RUN dnf -y install \
         unzip \
         gcc \
         dotnet-sdk-9.0 \
+        procps-ng \
     && dnf clean all \
     && rm -rf /var/cache/dnf
 
@@ -21,6 +22,15 @@ USER test
 WORKDIR /home/test/
 
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+
+# Create the playgrounds
+# dotnet
+RUN mkdir csharp  \
+    && cd csharp \
+    && dotnet new sln -n csharp  \
+    && dotnet new webapi -n webapi  \
+    && dotnet sln add ./webapi/webapi.csproj  \
+    && cd ..
 
 # Copy `typewriter` in the container
 COPY --chown=test:test . /home/test/.config/nvim/

@@ -14,6 +14,20 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 - Lua LSP support, trough `lua_ls`
 - Rust LSP support, trough `rust_analyzer`
 
+- Setup DAP support for C#
+  - Launching a C# project (build and attach)
+  - Attaching to a running process
+
+- Available DAP keybindings
+  - `F5`: Start/Continue binary debugging
+  - `F10`: Step over function
+  - `F11`: Step into function
+  - `Ctrl+F11`: Step out of current function
+  - `<LEADER>b`: Add/Remove breakpoint on current line
+  - `<LEADER>B`: Set contitional breakpoint on current line
+  - `<LEADER>bl`: Set log point breakpoint on current line
+  - `<LEADER>dr`: Open the REPL console of underling debugger
+
 ## [v0.6.0] - 2024-12-20
 
 ### Added
