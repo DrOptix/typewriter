@@ -8,25 +8,27 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 
 ### Added
 
-- In `normal` mode, `<LEADER>k`: Show documentation for the symbol under cursor.
-- In `normal` mode, `<LEADER>f`: Format the current buffer.
-
 - Lua LSP support, trough `lua_ls`
 - Rust LSP support, trough `rust_analyzer`
 
 - Setup DAP support for C#
+
   - Launching a C# project (build and attach)
   - Attaching to a running process
 
 - Available DAP keybindings
-  - `F5`: Start/Continue binary debugging
-  - `F10`: Step over function
-  - `F11`: Step into function
-  - `Ctrl+F11`: Step out of current function
-  - `<LEADER>b`: Add/Remove breakpoint on current line
-  - `<LEADER>B`: Set contitional breakpoint on current line
-  - `<LEADER>bl`: Set log point breakpoint on current line
-  - `<LEADER>dr`: Open the REPL console of underling debugger
+
+  - In `normal` mode, `F5`: Start/Continue binary debugging
+  - In `normal` mode, `F10`: Step over function
+  - In `normal` mode, `F11`: Step into function
+  - In `normal` mode, `Ctrl+F11`: Step out of current function
+  - In `normal` mode, `<LEADER>b`: Add/Remove breakpoint on current line
+  - In `normal` mode, `<LEADER>B`: Set contitional breakpoint on current line
+  - In `normal` mode, `<LEADER>bl`: Set log point breakpoint on current line
+  - In `normal` mode, `<LEADER>dr`: Open the REPL console of underling debugger
+  - In `normal` mode, `<LEADER>f`: Format the current buffer.
+  - In `normal` mode, `<LEADER>k`: Show documentation for the symbol under
+    cursor.
 
 ## [v0.6.0] - 2024-12-20
 
