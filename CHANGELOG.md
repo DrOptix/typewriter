@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 
 ### Added
 
+- In `normal` mode, `<LEADER>k`: Show documentation for the symbol under cursor.
+
 - Lua LSP support, trough `lua_ls`
 - Rust LSP support, trough `rust_analyzer`
 

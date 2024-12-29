@@ -35,6 +35,11 @@ return {
 
 				key_opts.desc = "Restart LSP"
 				vim.keymap.set("n", "<leader>rs", ":LspRestart<CR>", key_opts)
+
+				key_opts.desc = "Show documentation for the symbol under cursor"
+				vim.keymap.set("n", "<LEADER>k", function()
+					vim.lsp.buf.hover()
+				end, key_opts)
 			end,
 		})
 
