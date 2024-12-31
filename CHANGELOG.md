@@ -29,6 +29,8 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
   - In `normal` mode, `<LEADER>f`: Format the current buffer.
   - In `normal` mode, `<LEADER>k`: Show documentation for the symbol under
     cursor.
+  - In `normal` mode, `<LEADER>K`: Show signature help and keep showing it as
+    you type.
 
 ### Fixed
 
