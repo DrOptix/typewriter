@@ -30,7 +30,7 @@ return {
 				cwd = "${workspaceFolder}",
 				args = {},
 				program = function()
-                    os.execute("dotnet build -c Debug")
+					os.execute("dotnet build -c Debug")
 
 					return coroutine.create(function(co)
 						local opts = {}
@@ -71,6 +71,93 @@ return {
 									actions.select_default:replace(function()
 										actions.close(buffer_number)
 										coroutine.resume(co, action_state.get_selected_entry()[1])
+									end)
+									return true
+								end,
+							})
+							:find()
+					end)
+				end,
+			},
+		}
+
+		-- Rust
+		dap.adapters.codelldb = {
+			type = "server",
+			port = "${port}",
+			executable = {
+				command = vim.fn.expand("~/.local/share/nvim/mason/bin/codelldb"),
+				args = {
+					"--port",
+					"${port}",
+				},
+			},
+		}
+
+		dap.configurations.rust = {
+			{
+				type = "codelldb",
+				name = "[DAP codelldb] Launch",
+				request = "launch",
+				stopAtEntry = false,
+				cwd = "${workspaceFolder}",
+				args = {},
+				program = function()
+					os.execute("cargo build")
+
+					return coroutine.create(function(co)
+						local opts = {}
+						pickers
+							.new(opts, {
+								prompt_title = "Launch",
+								finder = finders.new_oneshot_job({
+									"find",
+									"./target/debug",
+									"-type",
+									"d",
+									"-name",
+									"deps",
+									"-prune",
+									"-o",
+									"-type",
+									"f",
+									"-executable",
+									"-print",
+								}, {}),
+								sorter = conf.generic_sorter(opts),
+								attach_mappings = function(buffer_number)
+									actions.select_default:replace(function()
+										actions.close(buffer_number)
+										coroutine.resume(
+											co,
+											"${workspaceFolder}/" .. action_state.get_selected_entry()[1]
+										)
+									end)
+									return true
+								end,
+							})
+							:find()
+					end)
+				end,
+			},
+			{
+				type = "codelldb",
+				name = "[DAP codelldb] Attach to process",
+				request = "attach",
+				pid = function()
+					return coroutine.create(function(co)
+						local opts = {}
+						local user = vim.fn.trim(vim.fn.system("whoami"))
+						pickers
+							.new(opts, {
+								prompt_title = "Attach to process",
+								finder = finders.new_oneshot_job({ "ps", "-U", user, "ah" }, {}),
+								sorter = conf.generic_sorter(opts),
+								attach_mappings = function(buffer_number)
+									actions.select_default:replace(function()
+										actions.close(buffer_number)
+										local selection = action_state.get_selected_entry()[1]
+										coroutine.resume(co, selection:match("(%d+)"))
 									end)
 									return true
 								end,

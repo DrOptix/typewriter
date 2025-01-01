@@ -38,5 +38,8 @@ RUN mkdir csharp  \
     && dotnet sln add ./webapi/webapi.csproj  \
     && cd ..
 
+# rust
+RUN PATH=$PATH:/home/test/.cargo/bin cargo new --bin rust
+
 # Copy `typewriter` in the container
 COPY --chown=test:test . /home/test/.config/nvim/
