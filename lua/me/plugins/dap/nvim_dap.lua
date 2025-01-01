@@ -140,6 +140,32 @@ return {
 					end)
 				end,
 			},
+			{
+				type = "codelldb",
+				name = "[DAP codelldb] Attach to process",
+				request = "attach",
+				pid = function()
+					return coroutine.create(function(co)
+						local opts = {}
+						local user = vim.fn.trim(vim.fn.system("whoami"))
+						pickers
+							.new(opts, {
+								prompt_title = "Attach to process",
+								finder = finders.new_oneshot_job({ "ps", "-U", user, "ah" }, {}),
+								sorter = conf.generic_sorter(opts),
+								attach_mappings = function(buffer_number)
+									actions.select_default:replace(function()
+										actions.close(buffer_number)
+										local selection = action_state.get_selected_entry()[1]
+										coroutine.resume(co, selection:match("(%d+)"))
+									end)
+									return true
+								end,
+							})
+							:find()
+					end)
+				end,
+			},
 		}
 	end,
 	config = function() end,

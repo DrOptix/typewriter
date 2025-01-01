@@ -15,6 +15,7 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
   - Launching a C# project (build and attach)
   - Attaching to a C# running process
   - Launching a Rust project (build and attach)
+  - Attaching to a Rust running process
 
 - Available DAP keybindings
   - In `normal` mode, `F5`: Start/Continue binary debugging
