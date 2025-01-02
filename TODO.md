@@ -11,8 +11,6 @@ the things I want to work on at some point. The `Done` section may overlap with
 
 ## In Progress
 
-- refactor(dap): Remove duplicated process picker code
-
 ## TODO
 
 - refactor(dap): Remove duplicated launch target picker code
@@ -21,4 +19,5 @@ the things I want to work on at some point. The `Done` section may overlap with
 
 ## Done
 
+- refactor(dap): Remove duplicated process picker code
 - test: Bind mount `typewriter` in test containers
