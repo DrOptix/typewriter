@@ -11,9 +11,10 @@ the things I want to work on at some point. The `Done` section may overlap with
 
 ## In Progress
 
+- refactor(dap): Remove duplicated launch target picker code
+
 ## TODO
 
-- refactor(dap): Remove duplicated launch target picker code
 - feat(dap): Add Lua DAP support
 - feat(dap): Display the build process console output
 
