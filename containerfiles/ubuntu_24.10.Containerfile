@@ -34,5 +34,3 @@ RUN mkdir csharp  \
 # rust
 RUN PATH=$PATH:/root/.cargo/bin cargo new --bin rust
 
-# Copy `typewriter` in the container
-COPY . /root/.config/nvim/
