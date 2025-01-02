@@ -18,14 +18,7 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-# Create `test` user, don't care about password
-RUN groupadd --gid 1001 test \
-    && useradd --uid 1001 --gid 1001 --create-home test \
-    && echo "test ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
-
-# Swith to user
-USER test
-WORKDIR /home/test/
+WORKDIR /root
 
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
@@ -39,7 +32,7 @@ RUN mkdir csharp  \
     && cd ..
 
 # rust
-RUN PATH=$PATH:/home/test/.cargo/bin cargo new --bin rust
+RUN PATH=$PATH:/root/.cargo/bin cargo new --bin rust
 
 # Copy `typewriter` in the container
-COPY --chown=test:test . /home/test/.config/nvim/
+COPY . /root/.config/nvim/
