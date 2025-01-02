@@ -12,14 +12,7 @@ RUN dnf -y install \
     && dnf clean all \
     && rm -rf /var/cache/dnf
 
-# Create `test` user, don't care about password
-RUN groupadd --gid 1000 test \
-    && adduser --uid 1000 --gid 1000 --create-home test \
-    && echo "test ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
-
-# Swith to user
-USER test
-WORKDIR /home/test/
+WORKDIR /root
 
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 
@@ -33,7 +26,5 @@ RUN mkdir csharp  \
     && cd ..
 
 # rust
-RUN PATH=$PATH:/home/test/.cargo/bin cargo new --bin rust
+RUN PATH=$PATH:/root/.cargo/bin cargo new --bin rust
 
-# Copy `typewriter` in the container
-COPY --chown=test:test . /home/test/.config/nvim/

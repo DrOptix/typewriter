@@ -7,16 +7,21 @@ set -eu
 # Get the directory of the current script
 SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 
-# Directory containing Dockerfiles, relative to the script directory
-CONTAINERFILES_DIR="$SCRIPT_DIR/../containerfiles"
+# Typewriter directory relative to the script directory
+TYPEWRITER_DIR="$SCRIPT_DIR/.."
+
+# Directory containing Dockerfiles, relative to typewriter directory
+CONTAINERFILES_DIR="$TYPEWRITER_DIR/containerfiles"
 
 function main() {
     podman build \
         -f "$CONTAINERFILES_DIR/fedora_41.Containerfile" \
         -t "typewriter_fedora_41" \
-        .
+        "$TYPEWRITER_DIR"
 
-    podman run -it --rm "typewriter_fedora_41:latest"
+    podman run -it --rm \
+        --volume "$TYPEWRITER_DIR":/root/.config/nvim:z \
+        "typewriter_fedora_41:latest"
 }
 
 main "$@"
