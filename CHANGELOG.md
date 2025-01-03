@@ -8,6 +8,13 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 
 ### Added
 
+- Support for seamless navigation between `neovim` and `tmux` panes
+
+  - In `normal` mode: `Ctrl+h` move left
+  - In `normal` mode: `Ctrl+j` move down
+  - In `normal` mode: `Ctrl+k` move up
+  - In `normal` mode: `Ctrl+l` move right
+
 - Lua LSP support, trough `lua_ls`
 - Rust LSP support, trough `rust_analyzer`
 
