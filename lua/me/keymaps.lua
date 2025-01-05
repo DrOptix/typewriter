@@ -1,39 +1,36 @@
 -- Setup leader key to `Space`
 vim.g.mapleader = " "
 
+local function map(mode, keymap, action, desc)
+	local opts = { noremap = true, silent = true, desc = desc }
+	vim.keymap.set(mode, keymap, action, opts)
+end
+
 -----------------------
 -- Window management --
 -----------------------
-vim.keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" })
-vim.keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" })
-vim.keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" })
-vim.keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" })
+
+-- Window splits
+map("n", "<leader>sv", "<C-w>v", "Split window vertically")
+map("n", "<leader>sh", "<C-w>s", "Split window horizontally")
+map("n", "<leader>se", "<C-w>=", "Make splits equal size")
+map("n", "<leader>sx", "<cmd>close<CR>", "Close current split")
 
 -- Resize window using Ctrl + Arrow Key
-vim.keymap.set("n", "<C-Up>", "<CMD>resize +2<CR>", { desc = "Increase split height", noremap = true, silent = true })
-vim.keymap.set("n", "<C-Down", "<CMD>resize -2<CR>", { desc = "Decrease split height", noremap = true, silent = true })
-vim.keymap.set(
-	"n",
-	"<C-Left>",
-	"<CMD>vertical resize -2<CR>",
-	{ desc = "Decrease split width", noremap = true, silent = true }
-)
-vim.keymap.set(
-	"n",
-	"<C-Right>",
-	"<CMD>vertical resize +2<CR>",
-	{ desc = "Increase split width", noremap = true, silent = true }
-)
+map("n", "<C-Up>", "<CMD>resize +2<CR>", "Increase split height")
+map("n", "<C-Down>", "<CMD>resize -2<CR>", "Decrease split height")
+map("n", "<C-Left>", "<CMD>vertical resize -2<CR>", "Decrease split width")
+map("n", "<C-Right>", "<CMD>vertical resize +2<CR>", "Increase split width")
 
 ---------------------
 -- Tabs management --
 ---------------------
-vim.keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" })
-vim.keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" })
-vim.keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" })
-vim.keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
+map("n", "<leader>to", "<cmd>tabnew<CR>", "Open new tab")
+map("n", "<leader>tx", "<cmd>tabclose<CR>", "Close current tab")
+map("n", "<leader>tn", "<cmd>tabn<CR>", "Go to next tab")
+map("n", "<leader>tp", "<cmd>tabp<CR>", "Go to previous tab")
 
 ------------
 -- Editor --
 ------------
-vim.keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
+map("n", "<leader>nh", ":nohl<CR>", "Clear search highlights")
