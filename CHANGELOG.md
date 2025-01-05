@@ -8,10 +8,20 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 
 ### Added
 
+- Support for seamless navigation between `neovim` and `tmux` panes
+
+  - In `normal` mode: `Ctrl+h` move left
+  - In `normal` mode: `Ctrl+j` move down
+  - In `normal` mode: `Ctrl+k` move up
+  - In `normal` mode: `Ctrl+l` move right, this keybinding is used by default by
+    `netrw` for `NetrwRefresh`, therefore we overwrite it to enable splits
+    navigation for a `netrw` split as well.
+
 - Lua LSP support, trough `lua_ls`
 - Rust LSP support, trough `rust_analyzer`
 
 - Setup DAP support
+
   - Launching a C# project (build and attach)
   - Attaching to a C# running process
   - Launching a Rust project (build and attach)
@@ -36,6 +46,13 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 
 - Increase split horizontal size used now `2` units instead of `1`, making it
   consistent with the other split resize steps.
+
+### Changed
+
+- `Shift+H` Replaced by `Ctrl+Left`: Decrease split horizontal size
+- `Shift+L` - Replaced by `Ctrl+Right`: Increase split horizontal size
+- `Shift+J` - Replaced by `Ctrl+Down`: Increase split vertical size
+- `Shift+K` - Replaced by `Ctrl+Up`: Decrease split vertical size
 
 ## [v0.6.0] - 2024-12-20
 
