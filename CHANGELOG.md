@@ -13,7 +13,9 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
   - In `normal` mode: `Ctrl+h` move left
   - In `normal` mode: `Ctrl+j` move down
   - In `normal` mode: `Ctrl+k` move up
-  - In `normal` mode: `Ctrl+l` move right
+  - In `normal` mode: `Ctrl+l` move right, this keybinding is used by default by
+    `netrw` for `NetrwRefresh`, therefore we overwrite it to enable splits
+    navigation for a `netrw` split as well.
 
 - Lua LSP support, trough `lua_ls`
 - Rust LSP support, trough `rust_analyzer`
