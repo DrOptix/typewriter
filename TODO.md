@@ -11,8 +11,6 @@ the things I want to work on at some point. The `Done` section may overlap with
 
 ## In Progress
 
-- fix(keymaps): Use `tmux` + `vim-tmux-navigator` friendly keybindings
-
 ## TODO
 
 - feat(dap): Add Lua DAP support
@@ -20,6 +18,7 @@ the things I want to work on at some point. The `Done` section may overlap with
 
 ## Done
 
+- fix(keymaps): Use `tmux` + `vim-tmux-navigator` friendly keybindings
 - refactor(dap): Remove duplicated launch target picker code
 - refactor(dap): Remove duplicated process picker code
 - test: Bind mount `typewriter` in test containers
