@@ -11,6 +11,15 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 - In `visual` mode: `Shift+J` move selected lines down
 - In `visual` mode: `Shift+K` move selected lines up
 
+## Changed
+
+- Update plugin `nvim-cmp` to `8c82d0b`
+- Update plugin `nvim-dap` to `b768c8d`
+- Update plugin `nvim-web-devicons` to `5740b73`
+- Update plugin `nvim-lspconfig` to `8121483`
+- Update plugin `nvim-treesitter` to `622a4a6`
+- Update plugin `lazy.nvim` to `d8f26ef`
+
 ## [v0.7.0] - 2025-01-05
 
 ### Added
