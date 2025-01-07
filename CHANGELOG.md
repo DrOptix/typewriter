@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 
 ## [unreleased]
 
+## Added
+
+- In `visual` mode: `Shift+J` move selected lines down
+- In `visual` mode: `Shift+K` move selected lines up
+
 ## [v0.7.0] - 2025-01-05
 
 ### Added

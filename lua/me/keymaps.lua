@@ -34,3 +34,8 @@ map("n", "<leader>tp", "<cmd>tabp<CR>", "Go to previous tab")
 -- Editor --
 ------------
 map("n", "<leader>nh", ":nohl<CR>", "Clear search highlights")
+
+-- Move lines up / down
+map("v", "J", ":m '>+1<CR>gv=gv", "Move selected lines down")
+map("v", "K", ":m '<-2<CR>gv=gv", "Move selected lines up")
+
