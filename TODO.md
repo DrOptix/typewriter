@@ -15,9 +15,9 @@ the things I want to work on at some point. The `Done` section may overlap with
 
 5. feat(dap): Add Lua DAP support
 6. feat(dap): Display the build process console output
-
 7. feat: LSP aware selections/deletions
-  This is something like `yap` or `dap` or `da"` or `di"`, but for code blocks
+   This is something like `yap` or `dap` or `da"` or `di"`, but for code blocks
+8. Enable C# and Rust LSP and debugging only if `dotnet` and `rust` installed
 
 ## Done
 
