@@ -20,6 +20,12 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 - Update plugin `nvim-treesitter` to `622a4a6`
 - Update plugin `lazy.nvim` to `d8f26ef`
 
+## Removed
+
+- containers(ubuntu_24.10): Removed as it's redundant
+
+- test(ubuntu_24.10): Removed as it's redundant
+
 ## [v0.7.0] - 2025-01-05
 
 ### Added
