@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 
 ## [unreleased]
 
+## [v0.8.0]
+
 ### Added
 
 - In `visual` mode: `Shift+J` move selected lines down
@@ -251,7 +253,8 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 - Horizontal splits will go bellow the current split
 - Add `-` as a keyword charater.
 
-[unreleased]: https://github.com/DrOptix/typewriter/compare/v0.7.0...HEAD
+[unreleased]: https://github.com/DrOptix/typewriter/compare/v0.8.0...HEAD
+[v0.8.0]: https://github.com/DrOptix/typewriter/compare/v0.7.0...v0.8.0
 [v0.7.0]: https://github.com/DrOptix/typewriter/compare/v0.6.0...v0.7.0
 [v0.6.0]: https://github.com/DrOptix/typewriter/compare/v0.5.0...v0.6.0
 [v0.5.0]: https://github.com/DrOptix/typewriter/compare/v0.4.0...v0.5.0
