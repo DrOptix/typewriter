@@ -1,16 +1,29 @@
 FROM registry.fedoraproject.org/fedora:41
 
+ARG NEOVIM_TAG=v0.10.4
+
 # Upgrade the system and install sudo and ansible
 RUN dnf -y install \
-        neovim \
         ripgrep \
         git \
         unzip \
         gcc \
         dotnet-sdk-9.0 \
         procps-ng \
+        ninja-build \
+        cmake \
+        make \
+        gettext \
+        curl \
+        glibc-gconv-extra \
     && dnf clean all \
     && rm -rf /var/cache/dnf
+
+WORKDIR /tmp/neovim
+
+RUN git clone https://github.com/neovim/neovim.git .
+RUN git checkout ${NEOVIM_TAG}
+RUN make CMAKE_BUILD_TYPE=Release && make install
 
 WORKDIR /root
 
