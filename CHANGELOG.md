@@ -13,8 +13,8 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 
 ## Changed
 
-- containers(fedora_41): Build and install Neovim manually
-- containers(ubuntu_24.04): Build and install Neovim manually
+- containers(fedora_41): Build and install Neovim v0.10.4
+- containers(ubuntu_24.04): Build and install Neovim v0.10.4
 
 - Update plugin `nvim-cmp` to `8c82d0b`
 - Update plugin `nvim-dap` to `b768c8d`
