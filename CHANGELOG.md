@@ -6,12 +6,12 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 
 ## [unreleased]
 
-## Added
+### Added
 
 - In `visual` mode: `Shift+J` move selected lines down
 - In `visual` mode: `Shift+K` move selected lines up
 
-## Changed
+### Changed
 
 - containers(fedora_41): Build and install Neovim v0.10.4
 - containers(ubuntu_24.04): Build and install Neovim v0.10.4
@@ -23,7 +23,7 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 - Update plugin `nvim-treesitter` to `622a4a6`
 - Update plugin `lazy.nvim` to `d8f26ef`
 
-## Removed
+### Removed
 
 - containers(ubuntu_24.10): Removed as it's redundant
 
