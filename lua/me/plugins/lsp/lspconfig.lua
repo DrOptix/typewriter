@@ -50,13 +50,6 @@ return {
 				vim.keymap.set("n", "<LEADER>K", function()
 					vim.lsp.buf.signature_help()
 				end, key_opts)
-
-				-- Display signature help while editing
-				vim.api.nvim_create_autocmd({ "InsertEnter", "TextChangedI", "InsertLeave" }, {
-					callback = function()
-						vim.lsp.buf.signature_help()
-					end,
-				})
 			end,
 		})
 
