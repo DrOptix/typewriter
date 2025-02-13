@@ -37,7 +37,7 @@ return {
 				vim.keymap.set("n", "<leader>rs", ":LspRestart<CR>", key_opts)
 
 				key_opts.desc = "Show documentation for the symbol under cursor"
-				vim.keymap.set("n", "<LEADER>k", function()
+				vim.keymap.set("n", "K", function()
 					vim.lsp.buf.hover()
 				end, key_opts)
 

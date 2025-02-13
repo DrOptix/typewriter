@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 
 ### Changed
 
+- In `normal` mode, show hover info using `Shift+K` instead of `<LEADER>k`
 - In `normal` mode, show signature info only when using `<LEADER>K`, but don't
   update it while typeing.
 
