@@ -8,20 +8,17 @@ set -eu
 SCRIPT_DIR="$(dirname "$(realpath "$0")")"
 
 # Typewriter directory relative to the script directory
-TYPEWRITER_DIR="$SCRIPT_DIR/.."
-
-# Directory containing Dockerfiles, relative to typewriter directory
-CONTAINERFILES_DIR="$TYPEWRITER_DIR/containerfiles"
+TYPEWRITER_DIR="$SCRIPT_DIR/../../"
 
 function main() {
     podman build \
-        -f "$CONTAINERFILES_DIR/ubuntu_24.04.Containerfile" \
-        -t "typewriter_ubuntu_24.04" \
+        -f "$SCRIPT_DIR/fedora_41.Containerfile" \
+        -t "typewriter_fedora_41" \
         "$TYPEWRITER_DIR"
 
     podman run -it --rm \
         --volume "$TYPEWRITER_DIR":/root/.config/nvim:z \
-        "typewriter_ubuntu_24.04:latest"
+        "typewriter_fedora_41:latest"
 }
 
 main "$@"
