@@ -12,6 +12,10 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 - In `normal` mode, show signature info only when using `<LEADER>K`, but don't
   update it while typeing.
 
+### Fixes
+
+- Fix LSP based formatting, tested with C# and Rust code ([PR 2])
+
 ## [v0.8.0]
 
 ### Added
@@ -271,3 +275,5 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 [v0.1.0]: https://github.com/DrOptix/typewriter/releases/tag/v0.1.0
 [Keep a Changelog]: https://keepachangelog.com/en/1.1.0/
 [SemVer]: https://semver.org/spec/v2.0.0.html
+
+[PR 2]: https://github.com/DrOptix/typewriter/pull/2
