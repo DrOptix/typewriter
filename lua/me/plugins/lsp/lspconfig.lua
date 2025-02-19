@@ -48,7 +48,7 @@ return {
 
 				key_opts.desc = "Format the current buffer"
 				vim.keymap.set("n", "<LEADER>f", function()
-					vim.lsp.buf.formatting()
+					vim.lsp.buf.format()
 				end, key_opts)
 			end,
 		})
