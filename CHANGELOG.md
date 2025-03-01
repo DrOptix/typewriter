@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 
 ## [unreleased]
 
+### Added
+
+- Replace `netrw` with `nvim-tree` ([PR 6])
+  - `<LEADER>e` to toggle the file tree on or off
+  - `q` to close the file tree
+  - `o` open a file in the editor or expand a directory in the tree
+  - `d` to delete a file
+  - `r` to rename a file or directory
+  - `c` to copy a file or directory
+  - `x` to cut a file or directory
+  - `p` paste a copy or cut file or directory
+  - `y` to yank a file or directory name
+
 ### Changed
 
 - In `normal` mode, show hover info using `Shift+K` instead of `<LEADER>k`
@@ -276,6 +289,6 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 [v0.1.0]: https://github.com/DrOptix/typewriter/releases/tag/v0.1.0
 [Keep a Changelog]: https://keepachangelog.com/en/1.1.0/
 [SemVer]: https://semver.org/spec/v2.0.0.html
-
 [PR 2]: https://github.com/DrOptix/typewriter/pull/2
 [PR 5]: https://github.com/DrOptix/typewriter/pull/5
+[PR 6]: https://github.com/DrOptix/typewriter/pull/6
