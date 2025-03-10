@@ -18,6 +18,7 @@ local imports = {
 	{ import = "typewriter.plugins.lsp" },
 	{ import = "typewriter.plugins.dap" },
 	{ import = "typewriter.plugins.themes" },
+	{ import = "typewriter.plugins.fileman" },
 }
 
 require("lazy").setup(imports, {
