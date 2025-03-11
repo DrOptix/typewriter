@@ -1,3 +1,2 @@
-require("typewriter.options")
-require("typewriter.keymaps")
+require("typewriter.core")
 require("typewriter.lazy")
