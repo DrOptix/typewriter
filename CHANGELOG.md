@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 ### Added
 
 - Replace `netrw` with `nvim-tree` ([PR 6])
+
   - `<LEADER>e` to toggle the file tree on or off
   - `q` to close the file tree
   - `o` open a file in the editor or expand a directory in the tree
@@ -18,6 +19,9 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
   - `x` to cut a file or directory
   - `p` paste a copy or cut file or directory
   - `y` to yank a file or directory name
+
+- Add `<LEADER>rn` key binding to run a LSP based rename for the symbol under
+  cursor
 
 ### Changed
 

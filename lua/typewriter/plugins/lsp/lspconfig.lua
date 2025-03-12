@@ -50,6 +50,11 @@ return {
 				vim.keymap.set("n", "<LEADER>f", function()
 					vim.lsp.buf.format()
 				end, key_opts)
+
+				key_opts.desc = "Rename symbol under cursor"
+				vim.keymap.set("n", "<LEADER>rn", function()
+					vim.lsp.buf.rename()
+				end, key_opts)
 			end,
 		})
 
