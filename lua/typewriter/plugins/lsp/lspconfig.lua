@@ -55,6 +55,11 @@ return {
 				vim.keymap.set("n", "<LEADER>rn", function()
 					vim.lsp.buf.rename()
 				end, key_opts)
+
+				key_opts.desc = "Code actions list"
+				vim.keymap.set("n", "<LEADER>ca", function()
+					vim.lsp.buf.code_action()
+				end, key_opts)
 			end,
 		})
 
