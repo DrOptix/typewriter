@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 
 ### Added
 
+- `<LEADER>cs` to use LSP code actions
+
 - Replace `netrw` with `nvim-tree` ([PR 6])
 
   - `<LEADER>e` to toggle the file tree on or off
