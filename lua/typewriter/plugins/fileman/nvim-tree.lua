@@ -3,13 +3,9 @@ return {
 	dependencies = {
 		"nvim-tree/nvim-web-devicons",
 	},
-	keys = function()
-		local nvim_tree = require("nvim-tree")
-
-		return {
-			{ "<LEADER>e", ":NvimTreeFindFileToggle<CR>", desc = "Toggle file tree" },
-		}
-	end,
+	keys = {
+		{ "<LEADER>e", ":NvimTreeFindFileToggle<CR>", desc = "Toggle file tree" },
+	},
 	opts = {
 		disable_netrw = true,
 		hijack_netrw = true,
