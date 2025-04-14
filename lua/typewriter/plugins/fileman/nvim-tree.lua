@@ -11,6 +11,14 @@ return {
 		hijack_netrw = true,
 		hijack_cursor = true,
 		hijack_unnamed_buffer_when_opening = false,
+		actions = {
+			open_file = {
+				quit_on_open = true,
+				window_picker = {
+					enable = false,
+				},
+			},
+		},
 		view = {
 			float = {
 				enable = true,
@@ -34,9 +42,6 @@ return {
 			width = function()
 				return math.floor(vim.opt.columns:get() * 5)
 			end,
-		},
-		filesystem_watchers = {
-			enable = true,
 		},
 	},
 }
