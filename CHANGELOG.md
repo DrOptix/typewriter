@@ -35,6 +35,7 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 ### Fixes
 
 - Fix LSP based formatting, tested with C# and Rust code ([PR 2])
+- Fix file opening by opening the file in the last active split ([PR 9])
 
 ## [v0.8.0]
 
@@ -298,3 +299,4 @@ The format is based on [Keep a Changelog], and this project adheres to [SemVer].
 [PR 2]: https://github.com/DrOptix/typewriter/pull/2
 [PR 5]: https://github.com/DrOptix/typewriter/pull/5
 [PR 6]: https://github.com/DrOptix/typewriter/pull/6
+[PR 9]: https://github.com/DrOptix/typewriter/pull/9
